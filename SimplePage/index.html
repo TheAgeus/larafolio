@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet"/>
+  <title>Awesome Website</title>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <div class="logo-container">
+        Logo
+      </div>
+      <div class="list-container">
+        <div class="list" id="list">
+          <ul>
+            <li onclick="location.href='https:/theageus.github.io/larafolio/'">Portafolio</li>
+            <li onclick="location.href='comentarios/index.html'">Comentarios</li>
+            <li>ITEM 3</li>
+          </ul>
+        </div>
+        AWESOME WEBSITE
+      </div>
+    </div>
+
+    
+  </header>
+  <main>
+    <section class="section-hero">
+      <h1>WELLCOME MY DEAR FRIEND</h1>
+      <div class="particle" id="particle1"> <span>:)</span></div>
+      <div class="particle" id="particle2"> <span>:)</span></div>
+      <div class="particle" id="particle3"> <span>:)</span></div>
+      <div class="particle" id="particle4"> <span>:)</span></div>
+      <div class="particle" id="particle5"> <span>:)</span></div>
+    </section>
+
+    <section class="section">
+      <canvas class="canvas-bg" height="700px"></canvas>
+      <div class="section-container">
+        <div class="svg-container box">
+          <svg width="100%" heigth="auto" viewBox="0 0 100 100">
+            <polygon id="redPolig" points="20,35 20,80 70,80 70,35 20,35" style="fill:rgb(255, 0, 0);" />
+            <polygon id="greenPolig" points="30,25 20,35 70,35 80,25 30,25" style="fill:rgb(0, 255, 0);" />
+            <polygon id="bluePolig" points="70,35 70,80 80,70 80,25 70,35" style="fill:rgb(0, 0, 255);" />
+          </svg>
+        </div>
+        <div class="section-text box">
+          <h2>Section title</h2>
+          <div class="text">
+            <p>Lorem ipsu consectetur adipisicing elit. Eveniet et nulla repudiandae recusandae nihil, dolor animi ipsum at totam nemo? Unde omnis dolores, earum at minima atque corporis distinctio quibusdam.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet et nulla repudiandae recusandae nihil, dolor animi ipsum at totam nemo? Unde omnis dolores, earum at minima atque corporis distinctio quibusdam.</p>
+            <button onclick="toggleBgAnimation()" class="btn-stop">START ANIMATION</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <form class="form" method="POST" id="form">
+        <label for="">Send your comments.<br>ex.This website is awesome!!!</label>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        <div>
+          <button id="form-btn" type="submit" class="send">SEND COMMENT</button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer">
+      Footer
+    </footer>
+  </main>
+
+  <script src="script.js"> </script>
+</body>
+
+</html>
